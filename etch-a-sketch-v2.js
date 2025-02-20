@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector('#grid-container')
+const clearGridButton = document.querySelector('#clear-button')
 const gridSize= 10// prompt("Please enter a desired size (max 100):")
 const gridSquareSize = 960 / gridSize;
 
@@ -18,7 +19,14 @@ function createGrid(){
         gridSquare.addEventListener("mouseover", (event) =>{
             gridSquare.style.backgroundColor = "black";
         })
+        
+        // add onclick event listener to clear the grid
+        clearGridButton.addEventListener('click', () =>{
+        gridSquare.style.backgroundColor = "white";
+        })
     }
+    
 }
+
 
 createGrid();
