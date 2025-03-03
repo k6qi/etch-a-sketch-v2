@@ -5,7 +5,15 @@
 .grid-square{
     width: 60px;
     height: 60px;
-    border: 1px solid black;
+    border: 1px solid gray;
+    background-color:white;
+}
+
+.grid-square-black{
+    width: 60px;
+    height: 60px;
+    border: 1px solid gray;
+    background-color:black;
 }
 
 #grid-container{
@@ -21,14 +29,14 @@
     justify-content: center;
 }
 
-#clear-button{
+#clear-button, #change-grid-button{
     padding: 1em;    
+    margin: 2em;
 }
 
-#button-container{
+#clear-button-container, #change-button-container{
     display:flex;
     justify-content: center;
-    margin-top:3em;
 }
 
 
